@@ -1,0 +1,245 @@
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../DevFolio.images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing h1 {
+  font-size: 50px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  transition: 0.4s;
+  height: 3px;
+  background-color: white;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-item {
+  width: fit-content;
+}
+
+.dropdown:hover>.dropdown-menu,
+.dropstart:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropstart>.dropdown-menu {
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .0em solid;
+  border-right: .0em solid transparent;
+  border-bottom: 0;
+  border-left: .0em solid transparent;
+}
+
+.circle {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 10px solid #0078ff;
+  transition: 0.5s;
+}
+
+.services-card h4 {
+  padding-top: 20px;
+}
+
+.services-card:hover .circle {
+  background-color: #0078ff;
+  color: white;
+  border: 10px solid #c8d0d8;
+}
+
+.circlee {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 10px solid #ced4da;
+  transition: 0.5s;
+}
+
+#COUNTER {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-image: linear-gradient(rgba(0, 120, 255, 0.5), rgba(0, 120, 255, 0.5)), url(../DevFolio.images/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.port-card:hover img {
+  transform: scale(1.1);
+}
+
+.port-img {
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.port-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #0078ff;
+}
+
+#TESTIMONIAL {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-image: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)), url(../DevFolio.images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.carousel-item h5 {
+  padding-top: 20px;
+}
+
+.blog-circle img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span:hover {
+  color: #0078ff;
+}
+
+.circleee {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #0078ff;
+  transition: 0.5s;
+}
+
+.clr {
+  clear: both;
+}
+
+.circleee:hover {
+  background-color: #0078ff;
+  color: white;
+  border: 10px solid #c8d0d8;
+}
+
+#CONTACT {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-image: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)), url(../DevFolio.images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#CONTACT .row {
+  background-color: white;
+}
+
+.btn:hover {
+  border: 5px solid #c8d0d8;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #0078ff;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  margin-top: 70px;
+}
